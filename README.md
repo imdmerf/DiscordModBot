@@ -1,6 +1,6 @@
 # DiscordModBot
 
-Discord moderation bot working on Sqlite3, discord.py
+Discord moderation bot working on Sqlite3, discord.py.
 
 ## Installation
 
@@ -19,7 +19,7 @@ Token = "Enter your token"
 OWNERID = Enter your id
 ```     
 
-And some values in ***someimportantthings.py.*** 
+And some values in ***someimportantthings.py.***.
     
 ```python
 #someimportantthings
@@ -48,18 +48,22 @@ Used **HotSwap**, it's means you can do changes on cogs files without shutdown b
 * User commands:    
   * !profile - displays user information;    
   * !status - you can create your own status.
+* Mod commands:
+  * !clear **[value]** - deletes the required number of messages;
+  * !ban **[member] [reason]** - bans a user with a reason;
+  * !kick **[member] [reason]** - kicks a user with a reason;
+  * !mute **[member] [time] [reason]** - mute the user for a specified time, with a reason ***(can mute: only text, only voice, text&voice)***;
+  * !gender **[member]** - gives the option to give one of two binary genders ***(If you want to assign a non-binary gender, use the !give command)***;
+  * !swap **[member]** - makes it possible to change one of the gender roles to another according to the binary system ***(If you want to assign a non-binary gender, use the !give command)***;
+  * !give **[member] [role]** - gives the user a role ***(before issuing, make sure that the role such a role exists
+!)***;
+  * !take **[member] [role]** - takes the role from the user ***(before issuing, make sure that the user has such a role
+!)***.
 
 ## ErrorHandler
-If you catch some problem you need to unload ***ErrorHandler***. When you do this, you will monitor the error in the console
+If you catch some problem you need to unload ***ErrorHandler***. When you do this, you will monitor the error in the console.
 
 ## Futures
-* Mod commands **[In working]**:
-  * kick;
-  * mute;
-  * ban;
-  * take role; 
-  * give role.
-
 * Role and Channel commands **[In working]**:
   * Member_join & Member_leave handler;
   * private role creator;
