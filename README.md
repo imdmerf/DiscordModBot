@@ -31,7 +31,7 @@ CHANNEL_FOR_LOGS = Enter channel id, where you want collect logs
 SERVER_ID = Enter id of your guild
 MUTE_ROLE = Enter your mute role id
 ```    
-If you are missing any roles, you need to create them on guild settings.
+> If you are missing any roles, you need to create them on guild settings.
 
 ***To get the id of a role, guild or channel, you need to right-click on the desired object.***
 
@@ -59,17 +59,27 @@ Used **HotSwap**, it's means you can do changes on cogs files without shutdown b
 !)***;
   * !take **[member] [role]** - takes the role from the user ***(before issuing, make sure that the user has such a role
 !)***.
+* Role commands:
+  * !role create **[rolename]** - creates a role on the guild with the **[rolename]** specified by the user;
+  * !role manage - opens the interaction menu with the previously created role ***(you can: delete your role, change color).***
+
 
 ## ErrorHandler
 If you catch some problem you need to unload ***ErrorHandler***. When you do this, you will monitor the error in the console.
 
-## Futures
-* Role and Channel commands **[In working]**:
-  * Member_join & Member_leave handler;
-  * private role creator;
-  * private role manager.
+## Member_join & Member_leave handler
+When a new user joins the guild, the bot gives him a verify role and leaves a log.    
 
-* ***And some interesting...***
+Also when the user leaves the server it is logged.
+## logging
+**Every** moderation action performed using the bot is logged.    
+***Example:***    
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/930560944835293214/932599473073455134/unknown.png"/>
+</p>
+
+## Futures
+* ***Some interesting...***
 ## <blank>
 <h3><p align="center">Attention</p></h3>
 <h3><p align="center">If you see this message:</p></h3>
